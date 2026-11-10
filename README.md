@@ -16,6 +16,22 @@ Firmware for the underglow LED driver board on BOLT Electric's (Virginia Tech) e
 | Debug | SWD, 10-pin connector |
 | PCB | Altium Designer, 4-layer. Design files: TODO (link, or "kept private by the team") |
 
+## Photos
+
+Screenshots and renders from Altium Designer. See the Status line above for how far the physical board has got.
+
+**MCU schematic sheet** (STM32C092RCT6 with decoupling, LED data, CAN, SWD, and reset nets)
+
+![MCU schematic sheet](docs/images/mcu-schematic.png)
+
+**PCB layout** (Altium PCB editor)
+
+![PCB layout in Altium](docs/images/pcb-layout.png)
+
+**3D render**
+
+![3D render of the underglow board](docs/images/pcb-3d-render.png)
+
 ## What the firmware does
 
 - TODO: one line per feature that actually works today. Example format: "Drives both strips with DMA-fed PWM, no CPU bit-banging."
