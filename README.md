@@ -1,6 +1,6 @@
 # BOLT Underglow Board Firmware
 
-Firmware for the underglow LED driver board on BOLT Electric's (Virginia Tech) electric motorcycle. The board drives two WS2812B strips and talks to the rest of the bike over CAN.
+Firmware for the underglow LED driver board on BOLT Electric's (Virginia Tech) electric motorcycle. The board drives two addressable LED strips, powered at either 5V or 12V, and talks to the rest of the bike over CAN.
 
 > Status: TODO (one of: schematic only / board assembled, bring-up in progress / running on the bike). Update this line every time it changes.
 
@@ -10,8 +10,8 @@ Firmware for the underglow LED driver board on BOLT Electric's (Virginia Tech) e
 |---|---|
 | MCU | STM32C092RCT6 (Cortex-M0+, 48 MHz, LQFP64) |
 | Clock | Internal HSI48, no crystal |
-| LEDs | 2x WS2812B strips, 30 LEDs each, 5V, 800 kHz one-wire data |
-| LED data | PA0 (TIM2_CH1) and PA1 (TIM2_CH2), timer + DMA, through a 5V level shifter |
+| LEDs | 2 strips, one-wire data at 800 kHz. Either 5V strips (WS2812B, 30 LEDs each, outputs J2 and J4) or 12V strips (TODO: strip type, outputs J3 and J5). Use one voltage at a time, never both (printed on the board silkscreen) |
+| LED data | LED1_DATA to LED4_DATA on PA0 to PA3, timer + DMA, through a level shifter (TODO: confirm which nets drive which connector) |
 | CAN | FDCAN1 on PA11/PA12 via MCP2562FD transceiver (TODO: confirm vs PD0/PD1 with the team) |
 | Debug | SWD, 10-pin connector |
 | PCB | Altium Designer, 4-layer. Design files: TODO (link, or "kept private by the team") |
