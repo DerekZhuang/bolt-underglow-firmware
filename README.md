@@ -68,9 +68,9 @@ Programmer: ST-LINK over SWD
 ## Repo layout
 
 ```
-firmware/    STM32CubeIDE project (.ioc included)
-docs/        Pinout, CAN message table, scope captures, photos
-hardware/    Schematic PDF and board photos (not raw team files unless approved)
+firmware/UnderglowBoard/    STM32CubeIDE project (.ioc included)
+docs/                       Pinout, CAN message table, scope captures, photos
+hardware/                   Schematic PDF and board photos (not raw team files unless approved)
 ```
 
 ## Credits and license

@@ -1,0 +1,27 @@
+# STM32CubeIDE build output and per-user workspace files
+firmware/**/STM32CubeIDE/Debug/
+firmware/**/STM32CubeIDE/Release/
+*.launch
+.metadata/
+
+# Compiler / linker output
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.map
+*.list
+*.hex
+*.bin
+
+# STM32CubeMX temporary / backup files
+MXTmpFiles/
+*.ioc.bak
+*_save
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
